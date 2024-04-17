@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Gloria+Hallelujah&family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>PetSpace</title>
+</head>
+<body id="contact">
+    <!-- Container to wrap everything -->
+    <div id="container">
+        <!-- Brand of website -->
+            <header>
+                <div class="main-header">
+                    <div class="logo">
+                        <img src="./paw-logo.png" alt="PetSpace's Logo">
+                        <img src="./pet-paw-logo-2.png" alt="logo ">
+                    </div>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="petList.html">Find a pet</a></li>
+                            <li class="active"><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav> <!-- End of main nav -->
+                </div>
+            </header>
+
+        <!-- Main content -->
+        <main>
+            <!-- <div  class="img-repeat"></div> -->
+            <h1>Contact Us</h1>
+            <hr width="50px" align="left">
+            <p>We would love to hear from you!</p>
+        
+            <form action="contact.html" method="post">
+                <fieldset>
+                    <label for="name" class="required-field"> Full name </label>
+                    <input type="text" id="name" required>
+                    <label for="email" class="required-field">Email </label>
+                    <input type="email" required>
+                    <label for="phone" class="required-field">Phone </label>
+                    <input type="tel" required>
+                    
+                    <label for="contact">How should we contact you?</label>
+                    <select name="options" id="contact-options">
+                        <option value="">Select One</option>
+                        <option value="email" id="email">Email</option>
+                        <option value="phone" id="phone">Phone</option>
+                    </select>
+                    <div id="email-input">
+                        <label for="email-input">Enter your email</label>
+                        <input type="text">
+                    </div>
+                    <div id="phone-input">
+                        <label for="phone-input">Enter your phone</label>
+                        <input type="tel">
+                    </div>
+                    <label for="message" class="required-field">Message: </label>
+                    <textarea name="message" id="message" cols="50" rows="10" required></textarea>
+                    
+                    <input type="submit" value="Submit Message">
+                </fieldset>
+            </form>
+
+        </main> <!-- End of main content -->
+    </div> <!-- End container -->
+    
+    <!-- Footer info -->
+    <footer>Made with ❤️ by Ayesha <br> &copy; Copyright 2024</footer>
+
+    <script src="select_box.js"></script>
+</body>
+</html>
